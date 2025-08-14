@@ -1,0 +1,12 @@
+{
+  "name": "world-hunger",
+  "version": "1.0.0",
+  "description": "Urban Farming Solutions - Fighting World Hunger Through Sustainable Urban Agriculture",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'This is a static site. Open index.html in your browser to view it.'"
+  },
+  "keywords": [ "urban-farming", "sustainability", "food-security", "agriculture" ],
+  "author": "",
+  "license": "ISC"
+}
