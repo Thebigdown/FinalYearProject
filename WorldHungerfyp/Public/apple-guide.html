@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Growing Guide - Urban Farming Solutions</title>
+    <style>
+        /* Makes sure nothing has extra space by default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Green header at top of page */
+        header {
+            background-color: #2c7744;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        /* White button to go back home */
+        .home-button {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: white;
+            color: #2c7744;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        /* Changes color when you hover over home button */
+        .home-button:hover {
+            background-color: #e8f5e9;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        /* Centers all the content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #2c7744;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* Green introduction box */
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding: 1rem;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+        }
+
+        /* Container for all the steps */
+        .growing-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        /* Each step gets its own white box */
+        .step {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Green header for each step */
+        .step-header {
+            background-color: #2c7744;
+            color: white;
+            padding: 1rem;
+        }
+
+        /* Content area inside each step */
+        .step-content {
+            padding: 1.5rem;
+        }
+
+        /* Placeholder for images that aren't loaded */
+        .step-image {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-style: italic;
+        }
+
+        .step-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Video player styling */
+        .step-video {
+            width: 100%;
+            height: 350px;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .step-video video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Extra information in each step */
+        .step-details {
+            margin-top: 1rem;
+        }
+
+        .step-details h3 {
+            color: #2c7744;
+            margin-bottom: 0.5rem;
+        }
+
+        /* List styling */
+        ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        ol {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Green button to scroll back up */
+        .back-to-top {
+            display: block;
+            text-align: center;
+            margin: 2rem 0;
+            background-color: #2c7744;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Footer at bottom of page */
+        footer {
+            background-color: #2c7744;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/index.html" class="home-button">← Home</a>
+        <h1>Urban Farming Solutions</h1>
+        <p>Apple Growing Guide</p>
+    </header>
+
+    <main>
+        <div class="intro">
+            <h1>Complete Guide to Growing Apples</h1>
+            <p>Learn how to grow delicious apples in containers using dwarf varieties perfect for urban spaces and small gardens.</p>
+        </div>
+
+        <div class="growing-steps">
+            <!-- Step 1: Choosing what type of apple tree to grow -->
+            <div class="step">
+                <div class="step-header">
+                    <h2>Step 1: Choosing Apple Varieties</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-video">
+                        <video width="100" height="350" controls autoplay muted loop>
+                            <source src="/clips/apple-step1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>Select dwarf and semi-dwarf apple varieties suited for container growing.</p>
+
+                    <div class="step-details">
+                        <h3>Best Container Varieties:</h3>
+                        <ul>
+                            <li><strong>Dwarf Trees</strong>: Honeycrisp, Gala, Fuji, Granny Smith (6-8 feet mature)</li>
+                            <li><strong>Columnar Apples</strong>: Northpole, Scarlet Sentinel, Golden Sentinel (narrow growth)</li>
+                            <li><strong>Multi-graft Trees</strong>: 3-4 varieties on one tree (space-saving)</li>
+                            <li><strong>Patio Varieties</strong>: Apple Babe, Garden Delicious (ultra-compact)</li>
+                        </ul>
+
+                        <h3>Rootstock Types:</h3>
+                        <ul>
+                            <li><strong>M27</strong>: Very dwarf (4-6 feet), needs permanent support</li>
+                            <li><strong>M9</strong>: Dwarf (6-8 feet), good for containers</li>
+                            <li><strong>M26</strong>: Semi-dwarf (8-12 feet), vigorous</li>
+                            <li><strong>G11</strong>: Dwarf with disease resistance</li>
+                        </ul>
+
+                        <h3>Pollination Requirements:</h3>
+                        <ul>
+                            <li>Most apples need cross-pollination from different variety</li>
+                            <li>Plant 2 different varieties or use multi-graft tree</li>
+                            <li>Some self-fertile: Golden Delicious, Granny Smith</li>
+                            <li>Crabapples can pollinate regular apples</li>
+                        </ul>
+
+                        <h3>Climate Considerations:</h3>
+                        <ul>
+                            <li>Choose varieties suited to your hardiness zone</li>
+                            <li>Consider chill hour requirements (cold hours needed)</li>
+                            <li>Select disease-resistant varieties for your area</li>
+                            <li>Early, mid, or late season varieties for extended harvest</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2: What container and soil you need -->
+            <div class="step">
+                <div class="step-header">
+                    <h2>Step 2: Container & Soil Setup</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-video">
+                        <video width="100" height="350" controls autoplay muted loop>
+                            <source src="/clips/apple-step2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>Prepare large, stable containers with proper soil mix for apple trees.</p>
+
+                    <div class="step-details">
+                        <h3>Container Requirements:</h3>
+                        <ul>
+                            <li>Minimum 20-gallon capacity (larger is better)</li>
+                            <li>30+ gallons for semi-dwarf varieties</li>
+                            <li>At least 18 inches deep and wide</li>
+                            <li>Heavy, stable container (prevent tipping)</li>
+                            <li>Multiple large drainage holes</li>
+                        </ul>
+
+                        <h3>Container Materials:</h3>
+                        <ul>
+                            <li><strong>Wooden Barrels</strong>: Attractive, good insulation</li>
+                            <li><strong>Large Ceramic Pots</strong>: Heavy, stable, attractive</li>
+                            <li><strong>Plastic Containers</strong>: Lightweight, affordable</li>
+                            <li><strong>Fabric Grow Bags</strong>: Good drainage, root pruning</li>
+                        </ul>
+
+                        <h3>Soil Mix:</h3>
+                        <ul>
+                            <li>Well-draining potting soil as base</li>
+                            <li>Add compost (30% of volume)</li>
+                            <li>Mix in coarse sand or perlite for drainage</li>
+                            <li>pH between 6.0-7.0</li>
+                            <li>Avoid heavy clay or garden soil</li>
+                        </ul>
+
+                        <h3>Growing Conditions:</h3>
+                        <ul>
+                            <li><strong>Light</strong>: 6-8 hours direct sunlight daily</li>
+                            <li><strong>Location</strong>: Protected from strong winds</li>
+                            <li><strong>Air Circulation</strong>: Good airflow prevents disease</li>
+                            <li><strong>Space</strong>: Room for mature size and maintenance</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: How to plant your apple tree -->
+            <div class="step">
+                <div class="step-header">
+                    <h2>Step 3: Planting & Initial Care</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-video">
+                        <video width="100" height="350" controls autoplay muted loop>
+                            <source src="/clips/apple-step3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>Plant your apple tree properly and provide support from the beginning.</p>
+
+                    <div class="step-details">
+                        <h3>Planting Steps:</h3>
+                        <ol>
+                            <li>Choose healthy, certified disease-free nursery stock</li>
+                            <li>Soak bare roots in water for 2-4 hours before planting</li>
+                            <li>Fill container 1/3 with soil mix</li>
+                            <li>Position tree at same depth as in nursery</li>
+                            <li>Backfill with soil, firming gently</li>
+                            <li>Water thoroughly to settle soil</li>
+                        </ol>
+
+                        <h3>Timing:</h3>
+                        <ul>
+                            <li><strong>Best Time</strong>: Late winter to early spring while dormant</li>
+                            <li><strong>Bare Root</strong>: Plant immediately when soil workable</li>
+                            <li><strong>Container Trees</strong>: Can plant spring through fall</li>
+                            <li>Avoid planting during extreme weather</li>
+                        </ul>
+
+                        <h3>Support Installation:</h3>
+                        <ul>
+                            <li>Install stake at planting time</li>
+                            <li>Use 6-8 foot sturdy stake</li>
+                            <li>Tie tree loosely with soft material</li>
+                            <li>Allow some movement for trunk strengthening</li>
+                            <li>Check and adjust ties regularly</li>
+                        </ul>
+
+                        <h3>Initial Pruning:</h3>
+                        <ul>
+                            <li>Remove any broken or damaged branches</li>
+                            <li>Cut back main leader by 1/3 if bare root</li>
+                            <li>Remove competing central leaders</li>
+                            <li>Start shaping tree structure early</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4: How to prune and shape your tree -->
+            <div class="step">
+                <div class="step-header">
+                    <h2>Step 4: Pruning & Training</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-video">
+                        <video width="100" height="350" controls autoplay muted loop>
+                            <source src="/clips/apple-step4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>Prune annually to maintain size, shape, and fruit production.</p>
+
+                    <div class="step-details">
+                        <h3>When to Prune:</h3>
+                        <ul>
+                            <li><strong>Best Time</strong>: Late winter while dormant</li>
+                            <li><strong>Avoid</strong>: Pruning during active growth</li>
+                            <li><strong>Light Summer Pruning</strong>: Remove water sprouts and suckers</li>
+                            <li>Remove dead/diseased branches any time</li>
+                        </ul>
+
+                        <h3>Pruning Goals:</h3>
+                        <ul>
+                            <li>Maintain manageable size for container</li>
+                            <li>Create open center for air circulation</li>
+                            <li>Remove dead, diseased, or crossing branches</li>
+                            <li>Encourage fruiting wood development</li>
+                            <li>Shape tree for easy harvesting</li>
+                        </ul>
+
+                        <h3>Basic Pruning Cuts:</h3>
+                        <ul>
+                            <li><strong>Heading Cuts</strong>: Cut back to bud, encourages branching</li>
+                            <li><strong>Thinning Cuts</strong>: Remove entire branch at base</li>
+                            <li><strong>Water Sprouts</strong>: Remove vertical shoots</li>
+                            <li><strong>Suckers</strong>: Remove growth from base</li>
+                        </ul>
+
+                        <h3>Training Systems:</h3>
+                        <ul>
+                            <li><strong>Central Leader</strong>: Traditional Christmas tree shape</li>
+                            <li><strong>Open Center</strong>: Vase shape, good air circulation</li>
+                            <li><strong>Modified Central Leader</strong>: Combination approach</li>
+                            <li><strong>Espalier</strong>: Flat against wall or fence</li>
+                        </ul>
+
+                        <h3>Fruit Thinning:</h3>
+                        <ul>
+                            <li>Thin fruits 6-8 weeks after bloom</li>
+                            <li>Leave one apple per cluster</li>
+                            <li>Space apples 6 inches apart on branch</li>
+                            <li>Remove small, damaged, or excess fruits</li>
+                            <li>Prevents branch breakage and improves fruit size</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Taking care of your apple tree -->
+            <div class="step">
+                <div class="step-header">
+                    <h2>Step 5: Watering & Feeding</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-video">
+                        <video width="100" height="350" controls autoplay muted loop>
+                            <source src="/clips/apple-step5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>Maintain consistent care throughout the growing season for healthy trees and quality fruit.</p>
+
+                    <div class="step-details">
+                        <h3>Watering Guidelines:</h3>
+                        <ul>
+                            <li>Water deeply but less frequently</li>
+                            <li>Check soil moisture 2-3 inches deep</li>
+                            <li>Water when soil feels dry at this depth</li>
+                            <li>Increase watering during fruit development</li>
+                            <li>Reduce watering in fall to prepare for dormancy</li>
+                        </ul>
+
+                        <h3>Seasonal Watering:</h3>
+                        <ul>
+                            <li><strong>Spring</strong>: Moderate, soil should not stay soggy</li>
+                            <li><strong>Summer</strong>: Consistent moisture, daily in hot weather</li>
+                            <li><strong>Fall</strong>: Gradually reduce as growth slows</li>
+                            <li><strong>Winter</strong>: Minimal, only if soil completely dry</li>
+                        </ul>
+
+                        <h3>Fertilizing Schedule:</h3>
+                        <ul>
+                            <li><strong>Early Spring</strong>: Balanced organic fertilizer before bud break</li>
+                            <li><strong>Late Spring</strong>: Nitrogen-rich organic fertilizer for growth</li>
+                            <li><strong>Mid-Summer</strong>: Balanced fertilizer, reduce nitrogen</li>
+                            <li><strong>Fall</strong>: Phosphorus and potassium for root development</li>
+                        </ul>
+
+                        <h3>Organic Feeding Options:</h3>
+                        <ul>
+                            <li>Compost worked into top layer of soil</li>
+                            <li>Fish emulsion for quick nitrogen (check local regulations)</li>
+                            <li>Bone meal for phosphorus</li>
+                            <li>Wood ash for potassium (use sparingly)</li>
+                            <li>Compost tea for overall nutrition</li>
+                        </ul>
+
+                        <h3>Signs of Problems & Solutions:</h3>
+                        <ul>
+                            <li><strong>Yellow leaves</strong>: Overwatering or nitrogen deficiency</li>
+                            <li><strong>Poor fruit set</strong>: Lack of pollination or poor nutrition</li>
+                            <li><strong>Small fruit</strong>: Need thinning or more fertilizer</li>
+                            <li><strong>Leaf curl</strong>: Water stress or aphids (use insecticidal soap)</li>
+                            <li><strong>Pest control</strong>: Use horticultural oil, sticky traps, or physical barriers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 6: When and how to harvest apples -->
+            <div class="step">
+                <div class="step-header">
+                    <h2>Step 6: Harvesting & Storage</h2>
+                </div>
+                <div class="step-content">
+                    <div class="step-video">
+                        <video width="100" height="350" controls autoplay muted loop>
+                            <source src="/clips/apple-step6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <p>Learn when and how to harvest for best flavor and maximum storage life.</p>
+
+                    <div class="step-details">
+                        <h3>When to Harvest:</h3>
+                        <ul>
+                            <li><strong>Color Change</strong>: Background color changes from green</li>
+                            <li><strong>Easy Removal</strong>: Apples lift easily with slight twist</li>
+                            <li><strong>Seed Color</strong>: Seeds turn brown when ripe</li>
+                            <li><strong>Taste Test</strong>: Sweet flavor fully developed</li>
+                            <li><strong>Timing</strong>: Varies by variety, typically late summer to fall</li>
+                        </ul>
+
+                        <h3>Harvesting Method:</h3>
+                        <ol>
+                            <li>Test ripeness on a few apples first</li>
+                            <li>Lift apple and twist gently</li>
+                            <li>Ripe apples come off easily with stem attached</li>
+                            <li>Handle carefully to avoid bruising</li>
+                            <li>Pick during cool part of day</li>
+                            <li>Harvest over several weeks as they ripen</li>
+                        </ol>
+
+                        <h3>Storage Preparation:</h3>
+                        <ul>
+                            <li>Sort apples by size and condition</li>
+                            <li>Use damaged apples immediately</li>
+                            <li>Don't wash before storage</li>
+                            <li>Store different varieties separately</li>
+                            <li>Remove any with brown spots</li>
+                        </ul>
+
+                        <h3>Storage Methods:</h3>
+                        <ul>
+                            <li><strong>Short-term</strong>: Refrigerate 2-4 weeks</li>
+                            <li><strong>Long-term</strong>: Cool, humid storage 32-40°F</li>
+                            <li><strong>Root Cellar</strong>: Ideal conditions, 3-6 months</li>
+                            <li><strong>Controlled Atmosphere</strong>: Professional storage method</li>
+                        </ul>
+
+                        <h3>Using Your Apples:</h3>
+                        <ul>
+                            <li>Fresh eating and snacking</li>
+                            <li>Apple pies, crisps, and desserts</li>
+                            <li>Applesauce and apple butter</li>
+                            <li>Drying for apple chips</li>
+                            <li>Fresh apple juice and cider</li>
+                        </ul>
+
+                        <h3>Winter Care:</h3>
+                        <ul>
+                            <li>Protect containers from freezing</li>
+                            <li>Move to protected area if needed</li>
+                            <li>Wrap containers with insulation</li>
+                            <li>Reduce watering significantly</li>
+                            <li>Prune during dormant season</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="back-to-top">Back to Top</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Urban Farming Solutions. All rights reserved.</p>
+        <p><a href="/index.html" style="color: white; text-decoration: underline;">Return to Home Page</a></p>
+    </footer>
+</body>
+</html>
