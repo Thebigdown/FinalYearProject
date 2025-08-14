@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "World-Hunger", "World-Hunger.esproj", "{CF134757-2A67-4FCC-9C27-2D514C41D190}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF134757-2A67-4FCC-9C27-2D514C41D190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF134757-2A67-4FCC-9C27-2D514C41D190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF134757-2A67-4FCC-9C27-2D514C41D190}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CF134757-2A67-4FCC-9C27-2D514C41D190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF134757-2A67-4FCC-9C27-2D514C41D190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF134757-2A67-4FCC-9C27-2D514C41D190}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D936C186-F478-4984-AAE0-CA680E1BCAF2}
+	EndGlobalSection
+EndGlobal
