@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Urban Farming Solutions</title>
+    <style>
+        /* Makes sure nothing has extra space by default */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Green header at top */
+        header {
+            background-color: #2c7744;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* White box that holds the login form */
+        .container {
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #2c7744;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Space between each input field */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Text above each input box */
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        /* Input boxes where you type */
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Green login button */
+        .btn {
+            display: inline-block;
+            background-color: #2c7744;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+            /* Button gets darker when you hover over it */
+            .btn:hover {
+                background-color: #1c5e30;
+            }
+
+        /* Links at bottom of form */
+        .links {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+            .links a {
+                color: #2c7744;
+                text-decoration: none;
+            }
+
+        /* Red error message (hidden until there's an error) */
+        .error-message {
+            color: red;
+            margin-bottom: 1rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Urban Farming Solutions</h1>
+    </header>
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <!-- This shows error messages if login fails -->
+        <div id="error-message" class="error-message"></div>
+
+        <form id="login-form">
+            <!-- Username input field -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <!-- Password input field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+        </form>
+
+        <!-- Links to register or go back home -->
+        <div class="links">
+            <p>Don't have an account? <a href="/register.html">Register</a></p>
+            <p><a href="/">Back to Home</a></p>
+        </div>
+    </div>
+
+    <script>
+        // This runs when someone clicks the login button
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            // Stop the form from refreshing the page
+            e.preventDefault();
+
+            // Get what the user typed
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            try {
+                // Send login info to the server
+                const response = await fetch('/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+
+                // Get the server's answer
+                const data = await response.json();
+
+                if (response.ok) {
+                    // Login worked! Go to home page
+                    window.location.href = '/';
+                } else {
+                    // Login failed - show error message
+                    const errorMessage = document.getElementById('error-message');
+                    errorMessage.textContent = data.message;
+                    errorMessage.style.display = 'block';
+                }
+            } catch (error) {
+                console.error('Login error:', error);
+            }
+        });
+    </script>
+</body>
+</html>
